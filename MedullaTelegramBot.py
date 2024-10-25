@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 
 # Firebase setup
-cred = credentials.Certificate(r"C:\Users\issu\Documents\TgBot\BotWithTimer\credentials.json")  # Update this path to your credentials file
+cred = credentials.Certificate(r"credentials.json")  # Update this path to your credentials file
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
